@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.progress-bar{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.pb-gradient,
+.wrap{
+    width: 80vw;
+    height: 50px;
+    position: relative;
+}
+.progress-line{
+    width: calc(770*0.1%);
+    overflow: hidden;
+}
+
+.clip{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/* Цвет фона за прогрес баром */
+.bg-clip-1,
+.bg-clip-2,
+.round9,
+.round10,
+.round11,
+.round12{
+    background-color: #FFF;
+}
+.round1,
+.round2,
+.round3,
+.round4,
+.line1{
+    background: linear-gradient(277deg, rgba(161,207,4,1) 25%, rgba(189,73,0,1) 92%);
+    background-size: cover;
+}
+.round5,
+.round6,
+.round7,
+.round8,
+.line2{
+    background-color: #b6b6b6;
+}
+.round1,
+.round5{
+    clip-path: circle(20px at 5% 50%);
+}
+.round2,
+.round6{
+    clip-path: circle(20px at 30% 50%);
+}
+.round3,
+.round7{
+    clip-path: circle(20px at 70% 50%);
+}.round4,
+.round8{
+    clip-path: circle(20px at 95% 50%);
+}
+.line1,
+.line2{
+    clip-path: inset(37% calc(17vw*0.2) 37% calc(17vw*0.2));
+}
+
+.round9{
+    clip-path: circle(10px at 5% 50%);
+}
+.round10{
+    clip-path: circle(10px at 30% 50%);
+}
+.round11{
+    clip-path: circle(10px at 70% 50%);
+}.round12{
+    clip-path: circle(10px at 95% 50%);
+}
+
